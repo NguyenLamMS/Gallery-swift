@@ -11,9 +11,9 @@ class customPageView: UIPageViewController, UIPageViewControllerDataSource {
     var imgArray = [UIImage]()
     var index: Int = 0
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        if index == 0 {
-            return nil
-        }
+            if index == 0 {
+                return nil
+            }
         self.index += -1
         let page = PageView()
         page.imgView.image = imgArray[index]
@@ -21,9 +21,9 @@ class customPageView: UIPageViewController, UIPageViewControllerDataSource {
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        if index == imgArray.count - 1 {
-            return nil
-        }
+            if index == imgArray.count - 1 {
+                return nil
+            }
         self.index += 1
         let page = PageView()
         page.imgView.image = imgArray[index]
@@ -71,19 +71,19 @@ class PageView: UIViewController, UIScrollViewDelegate {
         imgView.contentMode = .scaleAspectFit
         imgView.layer.cornerRadius = 11.0
         imgView.clipsToBounds = false
-        NSLayoutConstraint.activate([
+       NSLayoutConstraint.activate([
             scrollImg.topAnchor.constraint(equalTo: view.topAnchor),
             scrollImg.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             scrollImg.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             scrollImg.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            
+
             scrollImg.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             scrollImg.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             imgView.topAnchor.constraint(equalTo: scrollImg.topAnchor),
             imgView.leadingAnchor.constraint(equalTo: scrollImg.leadingAnchor),
             imgView.trailingAnchor.constraint(equalTo: scrollImg.trailingAnchor),
             imgView.bottomAnchor.constraint(equalTo: scrollImg.bottomAnchor),
-            
+
             imgView.centerXAnchor.constraint(equalTo: scrollImg.centerXAnchor),
             imgView.centerYAnchor.constraint(equalTo: scrollImg.centerYAnchor)
             ])
