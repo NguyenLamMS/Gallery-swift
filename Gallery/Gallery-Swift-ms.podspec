@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "Gallery-Swift-ms"
-s.version      = "2.0.0"
+s.version      = "3.0.1"
 s.summary      = "no summary"
 s.description  = <<-DESC
 no description
