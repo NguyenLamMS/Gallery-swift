@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1837C6CC21CCF00F00EC8695 /* Gallery.h in Headers */ = {isa = PBXBuildFile; fileRef = 1837C6CA21CCF00F00EC8695 /* Gallery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18CAE60B21E3542D006E2306 /* ImagePreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAE60921E3542D006E2306 /* ImagePreviewVC.swift */; };
-		18CAE60C21E3542D006E2306 /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAE60A21E3542D006E2306 /* Gallery.swift */; };
+		18402C7821EC6452009AC760 /* customPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18402C7621EC6451009AC760 /* customPageView.swift */; };
+		18402C7921EC6452009AC760 /* GalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18402C7721EC6452009AC760 /* GalleryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1837C6C721CCF00F00EC8695 /* Gallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1837C6CA21CCF00F00EC8695 /* Gallery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gallery.h; sourceTree = "<group>"; };
 		1837C6CB21CCF00F00EC8695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18CAE60921E3542D006E2306 /* ImagePreviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreviewVC.swift; sourceTree = "<group>"; };
-		18CAE60A21E3542D006E2306 /* Gallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
+		18402C7621EC6451009AC760 /* customPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customPageView.swift; sourceTree = "<group>"; };
+		18402C7721EC6452009AC760 /* GalleryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				1837C6CA21CCF00F00EC8695 /* Gallery.h */,
-				18CAE60A21E3542D006E2306 /* Gallery.swift */,
-				18CAE60921E3542D006E2306 /* ImagePreviewVC.swift */,
+				18402C7721EC6452009AC760 /* GalleryVC.swift */,
+				18402C7621EC6451009AC760 /* customPageView.swift */,
 				1837C6CB21CCF00F00EC8695 /* Info.plist */,
 			);
 			path = Gallery;
@@ -137,8 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18CAE60C21E3542D006E2306 /* Gallery.swift in Sources */,
-				18CAE60B21E3542D006E2306 /* ImagePreviewVC.swift in Sources */,
+				18402C7821EC6452009AC760 /* customPageView.swift in Sources */,
+				18402C7921EC6452009AC760 /* GalleryVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +279,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Gallery/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +306,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Gallery/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

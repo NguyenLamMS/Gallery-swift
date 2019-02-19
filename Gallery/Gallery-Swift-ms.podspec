@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "Gallery-Swift-ms"
-s.version      = "1.0.0"
+s.version      = "2.0.0"
 s.summary      = "no summary"
 s.description  = <<-DESC
 no description
@@ -25,7 +25,7 @@ DESC
 s.homepage     = "https://github.com/NguyenLamMS/Gallery-swift"
 s.license      = "MIT"
 s.author             = { "Nguyen Lam" => "lam1997.ln@gmail.com" }
-s.platform     = :ios, "11.0"
+s.platform     = :ios, "9.0"
 
 
 s.source       = { :git => "https://github.com/NguyenLamMS/Gallery-swift.git", :tag => "#{s.version}" }
